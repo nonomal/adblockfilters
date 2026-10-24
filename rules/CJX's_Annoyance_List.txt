@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202406202100
+! Version: 202610011010
 ! Title: CJX's Annoyance List
-! Last modified: 2024/06/20 21:00 +0800
+! Last modified: 2026/10/01 10:10 +0800
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/cjx82630/cjxlist
 !
@@ -11,6 +11,8 @@
 ! Email (cjxlist@gmail.com)
 !--------------------------General blocking filters---------------------------!
 /wiseatom/banner/pack_
+/npm/disable-devtool
+/bbs/include/javascript/adblock.
 /template/bingfeng/statics/js/pingbi.js
 -bobo_recommend_
 /3dmgamegzh.png
@@ -484,15 +486,39 @@
 ||djljz.cn/Plugins/Template/XJLY/js/app.
 ||infogram.com^$domain=hk01.com
 ||letvcdn.com/lc02_live/201803/18/23/40/1521387641261new.
+||tencent.com/confighub/ads/
 ||tencent.com/developer/api/common/getAds
 ||tencent.com/developer/api/common/getOneAds
 ||10086.cn/together/s?func=together:getAdvertInfos&
 ||bttt11.com/ad.
-||sexinsex.net/bbs/include/javascript/adblock.
 ||fanyi.baidu.com/pc/config
 ||fanyi.baidu.com/ait/config/cms/list?
 ||3dmgame.com/static/image/common/pc_tg3dm.
+||fc.3dmgame.com^
+||caiyunapp.com/lingoCloud/banner/home-bottom-banner.
+||linovelib.com/modules/article/scripts/
+||bilinovel.com/scripts/m7lk48m5hgztxn.
+||uiadmin.net/uview-plus/assets/js/3.1b3a95a0.
+||eastmoney.com/trade/fundfavortonglan.
 !------------------------Specific element hiding rules------------------------!
+55188.com###recommended-by-admin
+eastmoney.com##p > a[href*="acttg.eastmoney.com"]
+5eplay.com##footer
+5eplay.com##.right-aside-box
+5eplay.com##.ad_img-bg-bg-p
+5eplay.com##.banner-fixed
+500.com##.floatLayer-container
+500.com##.pc_odds_fenxi_banner
+douyu.com,~wan.douyu.com##a[href*="g.wan.douyu.com"]
+jin10.com##.top-poster
+jin10.com##.activity-side
+flowus.cn##footer .swiper
+bilibili.com#?#.is-rcmd:-abp-has(>div:not(div:-abp-has(div)))
+csdn.net###asideWriteGuide
+haokan.baidu.com##.page-top-rightinfo-popover
+baidu.com##.invoke-app-san-container
+baidu.com##.invoke-app-floating-tips
+thwiki.cc###a-carousel
 baidu.com##.index-module_drawerHand__aRhcO
 bilibili.com##.extension-tips
 77mh.nl###bdtopbot
@@ -558,7 +584,6 @@ alibabacloud.com##.b-alicloud-bottom
 alibabacloud.com##.hmod-alicloud-contact-sales-support
 autohome.com.cn##.activity-coin-layer
 php.cn##.wwads-cn
-thwiki.cc##.on-right > .swiper-container
 autohome.com.cn##.activity-app-layer
 autohome.com.cn##DIV[id^="popautoapp"]
 shengxinwang.net###floatDivBoxs
@@ -1317,7 +1342,6 @@ m.youku.com##.download
 baidu.com##.download-app-parent
 kdnet.net##.download-bar
 2.taobao.com##.download-layer
-km.com##.downloadApp
 gfan.com##.downs
 taizhou.com.cn##.duilian
 taizhou.com.cn##.duilian2
@@ -1438,6 +1462,8 @@ ifanr.com##.popup-app-download
 uisdc.com##.post-pm-content
 zhiyoo.com##.prompt
 qq.com##.public-banner
+csdn.net##.sidecolumn-vip
+csdn.net##.swiper-slide-box-remuneration
 csdn.net##.pulllog-box
 qq.com##.qGirl-wrap
 qdmm.com,qidian.com##.qdRead_client
@@ -1566,6 +1592,11 @@ m.babytree.com##script + a[class]
 @@||fm.ipinyou.$domain=ipinyou.com.cn
 @@||fm.p0y.cn^$domain=ipinyou.com.cn
 !--------------------------------Tracking Systems-----------------------------!
+||wmrmm.com^
+||shinpa.me^
+||dytt8899.com/js/tj.js
+||xuan5.com^$third-party
+||com.day^
 ||tongjiniao.com^$third-party
 .com/js/o.js$domain=qdmm.com|qdwenxue.com|qidian.com
 ||3158.cn^*_analyser.
@@ -1580,6 +1611,8 @@ m.babytree.com##script + a[class]
 /v.gif?logtype=
 /yesky/js/counter/*
 /zcool-analytics.js
+||wukongtongji.com^
+||aizhantj.com^
 ||lzp.plus^
 ||wujiupic.com^
 ||video.qq.com/checktime?
@@ -1625,7 +1658,6 @@ m.babytree.com##script + a[class]
 ||a.tbcdn.cn/s/tb-tracer-min.js
 ||abab.com/pv.js
 ||acookie.*.gif?
-||agrantsem.com/js/ag.js
 ||analy.tuniu.cn^
 ||analyse.weather.com.cn^
 ||analysis.chinaiiss.com^
